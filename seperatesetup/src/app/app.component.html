@@ -1,0 +1,9 @@
+<table border="1">
+<tr>
+<th>SNo</th><th>Description</th>
+</tr>
+<tr *ngFor ="let onerow of manyrows">
+<td>{{onerow.slno}}</td>
+<td>{{onerow.description|slice:0:30}}</td><!--pipe for excluding everything after 30th character in decsription-->
+</tr>
+</table>
